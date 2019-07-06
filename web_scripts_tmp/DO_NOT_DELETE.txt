@@ -1,0 +1,1 @@
+This directory is necessary to store login sessions and other transient files for auto-installed packages from scripts.mit.edu.

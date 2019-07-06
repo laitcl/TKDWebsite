@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>MIT Sport Taekwondo Club</title>
+	<link rel="stylesheet type="text/css" href="main.css">
+</head>
+
+<body>
+<center>
+<div id="header">
+<img src="header.jpg">
+</div>
+<div id="main">
+	<div id="menuColumn">
+		<p><img src="coolimage.jpg" border=0></p>
+		<p class="mainMenu"><a href="index.html">Home</a></p>
+		<p class="mainMenu"><a href="about.html">About Our Club</a></p>
+			<p class="smallMenu">Classes
+			<br><a href="calendar.html">Calendar</a>
+			<br><a href="accomplishments.html">Accomplishments</a>
+			<br><a href="faq.html">FAQ</a></p>
+		<p class="mainMenu"><a href="people.html">People</a></p>
+		<p class="mainMenu"><a href="media.html">Media</a></p>
+		<p class="mainMenu"><a href="links.html">Links</a></p>
+		<p class="mainMenu"><a href="https://web.mit.edu/taekwondo/members/index.html">Members Area</a></p>
+
+		<br></br>
+		<p><img src="mitlogo.gif" border=0></p>
+	</div>
+	
+	<div id="content">
+		<p><img src="classes.jpg" border=0></p>
+		<p> Classes are offered during the regular semester at the following times:</p>
+
+		<p><center><table>
+			<tr bgcolor="#620404">
+			<td></td>
+			<td WIDTH=80><center><font color="FFFFFF" size=2>SUN</font></center></td>
+			<td WIDTH=80><center><font color="FFFFFF" size=2>MON</font></center></td>
+			<td WIDTH=80><center><font color="FFFFFF" size=2>TUES</font></center></td>
+			<td WIDTH=80><center><font color="FFFFFF" size=2>WED</font></center></td>
+			<td WIDTH=80><center><font color="FFFFFF" size=2>THURS</font></center></td>
+			<td WIDTH=80><center><font color="FFFFFF" size=2>FRI</font></center></td>
+			<td WIDTH=80><center><font color="FFFFFF" size=2>SAT</font></center></td>
+			</tr>
+			<tr bgcolor="3B3B3B">
+			  <td bgcolor="#620404"><div align="center"><font color="FFFFFF" size=2>12:30pm - 2:00pm</font></div></td>
+			  <td>&nbsp;</td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			  <td><div align="center"><font color="FFFFFF" size=2>Office Hours</font></div></td>
+			</tr>
+			<tr bgcolor="3B3B3B">
+			<td WIDTH=109 bgcolor="#620404"><font color="FFFFFF" size=2>
+			  <center>
+			    <font color="FFFFFF" size=2>3:30pm - 5:30pm</font></font>
+			</center></td>
+			<td WIDTH=82><center><font color="FFFFFF" size=2>Sunday Workout</font></center></td>
+			<td></td><td></td><td></td><td></td><td></td>
+			<td><div align="center"></div></td>
+			</tr>
+			<tr bgcolor="3B3B3B">
+			<td bgcolor="#620404"><center><font color="FFFFFF" size=2>7:30pm - 9:30pm</font></center></td>
+			<td></td>
+			<td WIDTH=90 ><center><font color="FFFFFF" size=2>Regular Workout</font></center></td>
+			<td WIDTH=90></td>
+			<td WIDTH=90><center><font color="FFFFFF" size=2>Regular Workout</font></center></td>
+			<td WIDTH=90></td>
+			<td WIDTH=90><center><font color="FFFFFF" size=2>Sparring Workout</font></center></td>
+			<td WIDTH=90></td></tr></table>
+			</center>
+		</p>
+		<p> Summer and holiday practice times will vary depending on instructor or facility availability. Keep an eye on your emails for the most up-to-date class times!</p>
+		
+		<br>
+		<p class="header">Regular Workout</p>
+		<p> Regular workouts meet in Dupont Basketball Court #1. Everyone is welcome to attend. These classes are almost always led by Master Chuang and taught by all of our instructors. They cover everything from basic techniques to sparring drills and are very well attended. Students should remember to bring their sparring gear on Wednesdays.</p>
+
+		<p class="header">Sparring Workout</p>
+		<p> Sparring workout is held on Friday in Dupont Basketball Court #2. The class focuses on Olympic-style sparring techniques. The class is open to all students who are yellow belt or higher and they should remember to bring all of their sparring gear.</p>
+
+		<p class="header">Sunday Workout</p>
+		<p> Sunday workouts are held in the T-Club Lounge. These classes are open to everyone and are generally led by club instructors and will cover anything from promotion curriculum to sparring techniques.</p>
+
+		<p class="header">Office Hours</p>
+		<p> Office hours are held in the T-Club Lounge and are led by the club assistant instructors. They are open to all belt levels, and students can get one-on-one help on forms and curriculum or just kick.</p>
+	
+	
+	</div>
+</div>
+</center>
+</body>
+</html>

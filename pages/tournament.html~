@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>MIT Sport Taekwondo Club</title>
+	<link rel="stylesheet type="text/css" href="main.css">
+</head>
+
+<body>
+<center>
+<div id="header">
+<img src="header.jpg">
+</div>
+<div id="main">
+	<div id="menuColumn">
+		<p><img src="coolimage.jpg" border=0></p>
+		<p class="mainMenu"><a href="index.html">Home</a></p>
+		<p class="mainMenu"><a href="about.html">About Our Club</a></p>
+		<p class="mainMenu"><a href="people.html">People</a></p>
+		<p class="mainMenu"><a href="media.html">Media</a></p>
+		<p class="mainMenu"><a href="links.html">Links</a></p>
+		<p class="mainMenu"><a href="https://web.mit.edu/taekwondo/members/index.html">Members Area</a></p>
+		<p class="mainMenu">Tournaments</p>
+			<p class="smallMenu"><a href="signup.html">Sign-Ups</a>
+		</b>
+		<br></br>
+		<p><img src="mitlogo.gif" border=0></p>
+	</div>
+	
+	<div id="content">
+		<br><br>
+		<font face="Helvetica"><font size="5"><b>TOURNAMENTS</b></font></font>
+		<p>Whether you're an experienced veteran, or just experiencing taekwondo for the first time, you should consider signing up for the next ECTC tournament! There's nothing more exciting than representing your team by performing that form you've been practicing for months, nothing more epic than channeling all of that strength you've acquired from practice into sparring, and nothing more exotic than being there for your teammates, enthusiastically cheering them on throughout the day.</p>
+		
+		<p class="header2">Tournament Schedule</p>
+		<p><font face="Arial, Helvetica, sans-serif"><b>MIT Tournament </b>- Cambridge, 
+		        MA<br>
+		        <a href="http://ectc-online.org/results/2011MITResults.pdf">Click here for the tournament results.</a><br>
+		        Oct. 22, 2010, Saturday</font></p>
+		      <p><font face="Arial, Helvetica, sans-serif"><b>Cornell Tournament </b>- 
+		        Ithaca, NY<br>
+		        <br>
+		        Nov. 5, 2011, Saturday<br>
+		        </font></p>
+		      <p><font face="Arial, Helvetica, sans-serif"><b>Princeton Tournament </b>- 
+		        Princeton, NJ<br>
+		        Cancelled</font></p>
+		      <p><font face="Arial, Helvetica, sans-serif"><b>West Point Tournament </b>- 
+		        Princeton, NJ<br>
+		        Feb. 2012</font></p>
+		      <p><font face="Arial, Helvetica, sans-serif"><b>U Penn Tournament </b>- 
+		        Princeton, NJ<br>
+		        April 2012</font></p>
+		      <p><font face="Arial, Helvetica, sans-serif"></font></p>
+		
+
+		<p class="header2">Results</p>
+		<p>&nbsp&nbsp MIT Tournament</p>
+			<ol>
+			<li>MIT - 466</li>
+			<li>Cornell - 256</li>
+			<li>Princeton - 209</li>
+			<li>Brown - 176</li>
+			</ol>
+		<p>&nbsp&nbsp Cornell Tournament</p>
+			<ol>
+			<li>Cornell ~400</li>
+			<li>MIT ~320</li>
+			</ol>
+
+
+
+
+		<p>&nbsp&nbsp Overall Division I Standings</p>
+			<ol>
+			<li>MIT- 786</li>
+			<li>Cornell- 656</li>
+			</ol>
+
+		
+	</div>
+</div>
+</center>
+</body>
+</html>
