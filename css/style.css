@@ -657,6 +657,68 @@ h1, h2, h3, h4, h5, h6, figure {
       .schedule .schedule-flex .entry-forth h3 {
         font-size: 18px;
         margin-bottom: 10px; }
+    .schedule .schedule-flex .entry-third {
+      width: 33%;
+      border-left: 1px solid #d9d9d9;
+      padding: 1em; }
+      @media screen and (max-width: 768px) {
+        .schedule .schedule-flex .entry-third {
+          width: 100%;
+          border-left: 0; } }
+      .schedule .schedule-flex .entry-third:first-child {
+        border-left: none; }
+      .schedule .schedule-flex .entry-third p {
+        margin-bottom: 10px; }
+      .schedule .schedule-flex .entry-third .icon i {
+        font-size: 40px;
+        background: #9870FC;
+        /* Old browsers */
+        background: -moz-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: -o-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+        background: linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DC2F2F', endColorstr='#9870FC',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -ms-background-clip: text;
+        -o-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -ms-text-fill-color: transparent;
+        -o-text-fill-color: transparent;
+        text-fill-color: transparent; }
+      .schedule .schedule-flex .entry-third .time {
+        display: block; }
+        .schedule .schedule-flex .entry-third .time span {
+          display: inline-block;
+          padding: 5px 15px;
+          color: #fff;
+          font-size: 12px;
+          background: #9870FC;
+          /* Old browsers */
+          background: -moz-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: -o-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+          background: linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DC2F2F', endColorstr='#9870FC',GradientType=1 );
+          /* IE6-9 fallback on horizontal gradient */
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          border-radius: 30px; }
+      .schedule .schedule-flex .entry-third .trainer {
+        font-size: 13px; }
+      .schedule .schedule-flex .entry-third h3 {
+        font-size: 18px;
+        margin-bottom: 10px; }
 
 .trainers-entry .trainer-img {
   display: block;

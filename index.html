@@ -143,89 +143,90 @@
 				</div>
 			</div>
 		</div>
-		
 
-		<div id="colorlib-services">
-		</div>
 		<div id="colorlib-schedule" class="colorlib-light-grey">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Our Class Schedule</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+						<h2>Our Practice Schedule</h2>
+						<p>The following is our practice schedule</p>
 					</div>
 				</div>
+				
 				<div class="row">
 					<div class="schedule text-center animate-box">
 						<div class="col-md-12">
 							<ul class="week">
-								<li class="active"><a href="#">Sunday</a></li>
-								<li><a href="#">Monday</a></li>
-								<li><a href="#">Tuesday</a></li>
-								<li><a href="#">Wednesday</a></li>
-								<li><a href="#">Thursday</a></li>
-								<li><a href="#">Friday</a></li>
-								<li><a href="#">Saturday</a></li>
+								<button onclick="openSchedule('Beginner')">Beginner</button>
+								<button onclick="openSchedule('Experienced')">Experienced</button>
 							</ul>
 						</div>
-						<div class="schedule-flex">
+						<div id="Beginner" class="schedule-flex scheduletype">
+							<div class="entry-third">
+								<p class="icon"><span><i class="flaticon-martial-arts"></i></span></p>
+								<p class="time"><span>Monday, Wednesday <br> 7:30 - 9:30pm</span></p>
+								<h3>Club Practices</h3>
+								<p class="trainer"><span>DuPont Basketball Courts</span></p>
+							</div>
+							<div class="entry-third">
+								<p class="icon"><span><i class="flaticon-gloves"></i></span></p>
+								<p class="time"><span>Friday <br> 7:30 - 9:30pm </span></p>
+								<h3>Sparring Practice</h3>
+								<p class="trainer"><span>DuPont Basketball Courts</span></p>
+							</div>
+							<div class="entry-third">
+								<p class="icon"><span><i class="flaticon-exercise-2"></i></span></p>
+								<p class="time"><span>Sunday <br> 1 - 3pm</span></p>
+								<h3>Captain's Practice</h3>
+								<p class="trainer"><span>T-Club Lounge</span></p>
+							</div>
+						</div>
+
+						<div id="Experienced" class="schedule-flex scheduletype" style="display:none">
 							<div class="entry-forth">
 								<p class="icon"><span><i class="flaticon-martial-arts"></i></span></p>
-								<p class="time"><span>MWF <br> 7:30 - 9:30pm</span></p>
+								<p class="time"><span>Monday, Wednesday <br> 7:30 - 9:30pm</span></p>
 								<h3>Club Practices</h3>
 								<p class="trainer"><span>DuPont Basketball Courts</span></p>
 							</div>
 							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-exercise-2"></i></span></p>
-								<p class="time"><span>TR <br> 9:15 - 11pm</span></p>
-								<h3>Advanced Sparring Practice</h3>
-								<p class="trainer"><span>CW Taekwondo <br> by invitation only</span></p>
-							</div>
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-meditation"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Yoga Classes</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
+								<p class="icon"><span><i class="flaticon-gloves"></i></span></p>
+								<p class="time"><span>Tuesday, Thursday <br> 7:30 - 9:30pm</span></p>
+								<h3>Advanced Sparring Practice <br> - by Invitation Only</h3>
+								<p class="trainer"><span>CW Taekwondo</span></p>
 							</div>
 							<div class="entry-forth">
 								<p class="icon"><span><i class="flaticon-gloves"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Boxing Program</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
+								<p class="time"><span>Friday <br> 7:30 - 9:30pm </span></p>
+								<h3>Sparring Practice</h3>
+								<p class="trainer"><span>DuPont Basketball Courts</span></p>
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-exercise-2"></i></span></p>
+								<p class="time"><span>Sunday <br> 1 - 3pm</span></p>
+								<h3>Captain's Practice</h3>
+								<p class="trainer"><span>T-Club Lounge</span></p>
 							</div>
 						</div>
-						<div class="schedule-flex">
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-gym"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Karate Classes</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
-							</div>
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-weightlifting"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Body Building</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
-							</div>
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-swimmer"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Swimming Program</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
-							</div>
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-man"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Basic Exercise</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
-							</div>
 						</div>
+
+						<script>
+						function openSchedule(scheduleName) {
+						  var i;
+						  var x = document.getElementsByClassName("scheduletype");
+						  for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						  }
+						  document.getElementById(scheduleName).style.display = "flex";  
+						}
+						</script>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="colorlib-testimony" class="testimony-img" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+
+		<div id="colorlib-testimony" class="testimony-img" style="background-image: url(images/index/bg_2.png);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -242,10 +243,10 @@
 									<div class="testimony-slide">
 										<div class="testimony-wrap">
 											<blockquote>
-												<span>Sophia Foster Loose 20LBS in just 2 months</span>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+												<span>Nina Anwar - Course 10 Class of 2018</span>
+												<p>uhhh, join tkd to become as hot as lawrence</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person1.jpg);"></div>
+											<div class="figure-img" style="background-image: url(images/index/testimonial_1.jpg);"></div>
 										</div>
 									</div>
 								</div>
@@ -253,10 +254,10 @@
 									<div class="testimony-slide">
 										<div class="testimony-wrap">
 											<blockquote>
-												<span>John Collins</span>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+												<span>Ajay Saini - Course 5 Class of 2018</span>
+												<p>Lol my snap stuff cannot go on insta way too ratchet.</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person2.jpg);"></div>
+											<div class="figure-img" style="background-image: url(images/index/testimonial_2.jpg);"></div>
 										</div>
 									</div>
 								</div>
@@ -264,10 +265,10 @@
 									<div class="testimony-slide">
 										<div class="testimony-wrap">
 											<blockquote>
-												<span>Adam Ross</span>
-												<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+												<span>Renee Zhao - Course 6 Class of 2018</span>
+												<p>MIT Sport Taekwondo will instantly give you a new set of friends, and over time a new body, resilience, and drive.</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person3.jpg);"></div>
+											<div class="figure-img" style="background-image: url(images/index/testimonial_3.jpg);"></div>
 										</div>
 									</div>
 								</div>
@@ -283,46 +284,88 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
 						<h2>Our Experienced Trainers</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+						<p>MIT Sport Taekwondo partners with affiliates and alums that are world class Taekwondo practitioners.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-3 col-sm-3 animate-box">
 						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-1.jpg)"></div>
+							<div class="trainer-img" style="background-image: url(images/instructors/dan_chuang.jpg)"></div>
 							<div class="desc">
-								<h3>Diego Carter</h3>
-								<span>Body Building Trainer</span>
+								<h3>Dan Chuang</h3>
+								<span>Head Coach</span>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-md-3 col-sm-3 animate-box">
 						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-2.jpg)"></div>
+							<div class="trainer-img" style="background-image: url(images/instructors/michelle_chen.jpg)"></div>
 							<div class="desc">
-								<h3>Lea Young</h3>
-								<span>Body Building Trainer</span>
+								<h3>Michelle Chen</h3>
+								<span>National Poomsae Gold Medalist</span>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-md-3 col-sm-3 animate-box">
 						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-3.jpg)"></div>
+							<div class="trainer-img" style="background-image: url(images/instructors/isaac_fenta.jpg)"></div>
 							<div class="desc">
-								<h3>Alysha Reed</h3>
-								<span>Body Building Trainer</span>
+								<h3>Isaac Fenta</h3>
+								<span>Sparring Instructor</span>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-md-3 col-sm-3 animate-box">
 						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-4.jpg)"></div>
+							<div class="trainer-img" style="background-image: url(images/instructors/nick_hensel.png)"></div>
 							<div class="desc">
-								<h3>George Cooper</h3>
-								<span>Body Building Trainer</span>
+								<h3>Nicholas Hensel</h3>
+								<span>Sparring Instructor</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/renee_zhao.jpg)"></div>
+							<div class="desc">
+								<h3>Renee Zhao</h3>
+								<span>National Poomsae Gold Medalist</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/sam_kim.jpg)"></div>
+							<div class="desc">
+								<h3>Samuel Kim</h3>
+								<span>Leader of MIT Sport Taekwondo Demo Team</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/ashley_wang.jpg)"></div>
+							<div class="desc">
+								<h3>Ashley Wang</h3>
+								<span>Insert Title</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/tahin_syed.jpg)"></div>
+							<div class="desc">
+								<h3>Tahin Syed</h3>
+								<span>Insert Title</span>
 							</div>
 						</div>
 					</div>
@@ -376,106 +419,6 @@
 					</div>
 				</div>
 			</div>	
-		</div>
-
-		<div class="colorlib-event">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Upcoming Events</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-					</div>
-				</div>
-				<div class="row row-pb-sm">
-					<div class="col-md-4 animate-box">
-						<div class="event-entry">
-							<div class="desc">
-								<p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-								<p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-								<h2><a href="event.html">Special Training for Karate at Robust Gym</a></h2>
-							</div>
-							<div class="location">
-								<span class="icon"><i class="icon-map"></i></span>
-								<p>291 South 21th Street, Suite 721 New York NY 10016</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="event-entry">
-							<div class="desc">
-								<p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-								<p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-								<h2><a href="event.html">World Yoga Day at Robust Gym</a></h2>
-							</div>
-							<div class="location">
-								<span class="icon"><i class="icon-map"></i></span>
-								<p>291 South 21th Street, Suite 721 New York NY 10016</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="event-entry">
-							<div class="desc">
-								<p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-								<p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-								<h2><a href="event.html">1st Anniversary of Robust Gym</a></h2>
-							</div>
-							<div class="location">
-								<span class="icon"><i class="icon-map"></i></span>
-								<p>291 South 21th Street, Suite 721 New York NY 10016</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="colorlib-blog colorlib-light-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Recent Blog</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-								<p class="meta"><span class="day">18</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Posted by:</span> <span>Noah Henderson</span></p>
-								<h2><a href="blog.html">Need workout motivation?</a></h2>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-								<p class="meta"><span class="day">18</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Posted by:</span> <span>Noah Henderson</span></p>
-								<h2><a href="blog.html">Need workout motivation?</a></h2>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-								<p class="meta"><span class="day">18</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Posted by:</span> <span>Noah Henderson</span></p>
-								<h2><a href="blog.html">Need workout motivation?</a></h2>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
 		</div>
 
 	
