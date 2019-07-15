@@ -51,8 +51,10 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<script src="js/jquery.min.js"></script>
 	</head>
+	
+	
 	<body>
 		
 	<div class="colorlib-loader"></div>
@@ -61,37 +63,15 @@
 		<nav class="colorlib-nav" role="navigation">
 			<div class="top-menu">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.html">MIT Sport Taekwondo</a></div>
-						</div>
-						<div class="col-md-10 text-right menu-1">
-							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="classes.html">Information</a>
-									<ul class="dropdown">
-										<li><a href="classes-single.html">Club Practices</a></li>
-										<li><a href="#">Tournaments</a></li>
-										<li><a href="#">Belt Tests</a></li>
-										<li><a href="#">Social Events</a></li>
-										<li><a href="#">CW Taekwondo Affiliation</a></li>
-										<li><a href="#">Membership Dues</a></li>
-									</ul>
-								</li>
-								<li><a href="schedule.html">Schedule</a></li>
-								<li class="has-dropdown">	
-									<a href="about.html">People</a>
-									<ul class="dropdown">
-										<li><a href="classes-single.html">Officers</a></li>
-										<li><a href="#">Instructors</a></li>
-									</ul>
-								<li><a href="event.html">Events</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
+
+					<div id="nav-placeholder">
 					</div>
+					<script>
+					$(function(){
+					  $("#nav-placeholder").load("nav.html");
+					});
+					</script>
+
 				</div>
 			</div>
 		</nav>
@@ -116,7 +96,7 @@
 		</aside>
 		
 		<div id="colorlib-intro">
-			<div class="container">
+			<div class="container" style="margin-bottom: 25px">
 				<div class="row">
 					<div class="col-md-12 intro-wrap animate-box">
 						<div class="intro-flex">
@@ -126,7 +106,7 @@
 									<p>Join one of our rigorous club pratices to learn the martial art of Taekwondo</p>
 								</div>
 							</div>
-							<div class="one-third intro-img" style="background-image: url(images/index/intro_2.jpg)">
+							<div class="one-third intro-img" style="background-image: url(images/index/intro_2.jpg)" >
 								<div class="desc">
 									<h3>Tournaments</h3>
 									<p>Test your mettle in the six annual tournaments throughout the nation</p>
@@ -149,7 +129,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
 						<h2>Our Practice Schedule</h2>
-						<p>The following is our practice schedule</p>
+						<p>Our practices take place at</p>
 					</div>
 				</div>
 				
@@ -244,7 +224,7 @@
 										<div class="testimony-wrap">
 											<blockquote>
 												<span>Nina Anwar - Course 10 Class of 2018</span>
-												<p>uhhh, join tkd to become as hot as lawrence</p>
+												<p>I have developed to become a much more self confident person by joining MIT Sport Taekwondo.</p>
 											</blockquote>
 											<div class="figure-img" style="background-image: url(images/index/testimonial_1.jpg);"></div>
 										</div>
@@ -254,8 +234,8 @@
 									<div class="testimony-slide">
 										<div class="testimony-wrap">
 											<blockquote>
-												<span>Ajay Saini - Course 5 Class of 2018</span>
-												<p>Lol my snap stuff cannot go on insta way too ratchet.</p>
+												<span>Ajay Saini - Course 6 Class of 2018</span>
+												<p>Discover strength and form a community that will last you a lifetime.</p>
 											</blockquote>
 											<div class="figure-img" style="background-image: url(images/index/testimonial_2.jpg);"></div>
 										</div>
@@ -265,7 +245,7 @@
 									<div class="testimony-slide">
 										<div class="testimony-wrap">
 											<blockquote>
-												<span>Renee Zhao - Course 6 Class of 2018</span>
+												<span>Renee Zhao - Course 5 Class of 2018</span>
 												<p>MIT Sport Taekwondo will instantly give you a new set of friends, and over time a new body, resilience, and drive.</p>
 											</blockquote>
 											<div class="figure-img" style="background-image: url(images/index/testimonial_3.jpg);"></div>
@@ -376,43 +356,40 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Our Classes</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+						<h2>Our Practices</h2>
+						<p>MIT Sport Taekwondo practices are generally focused on one of the following categories</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-1.jpg);">
-								<span class="price text-center">$25.00<br><small>/month</small></span>
+							<div class="classes-img" style="background-image: url(images/index/Classes/Sparring.jpg);">
 							</div>
 							<div class="desc">
-								<h3><a href="#">Fitness Gym &amp; Cardio</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+								<h3><a href="#">Olympic Style Sparring</a></h3>
+								<p>Express your technique through olympic style taekwondo sparring</p>
 								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-2.jpg);">
-								<span class="price text-center">$25.00<br><small>/month</small></span>
+							<div class="classes-img" style="background-image: url(images/index/Classes/Poomsae.jpg);">
 							</div>
 							<div class="desc">
-								<h3><a href="#">Strength Training</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+								<h3><a href="#">World Taekwondo Poomsae (Forms) </a></h3>
+								<p>Perfect your precision through World Taekwondo Forms</p>
 								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-3.jpg);">
-								<span class="price text-center">$25.00<br><small>/month</small></span>
+							<div class="classes-img" style="background-image: url(images/index/Classes/Conditioning.jpg);">
 							</div>
 							<div class="desc">
-								<h3><a href="#">Yoga Program</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+								<h3><a href="#">Conditioning and Strength</a></h3>
+								<p>Build a stronger body in our conditioning sessions</p>
 								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
 							</div>
 						</div>
@@ -421,106 +398,7 @@
 			</div>	
 		</div>
 
-	
-		<div id="colorlib-subscribe" class="subs-img" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Subscribe Newsletter</h2>
-						<p>Subscribe our newsletter and get latest update</p>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="row">
-							<div class="col-md-12">
-							<form class="form-inline qbstp-header-subscribe">
-								<div class="col-three-forth">
-									<div class="form-group">
-										<input type="text" class="form-control" id="email" placeholder="Enter your email">
-									</div>
-								</div>
-								<div class="col-one-third">
-									<div class="form-group">
-										<button type="submit" class="btn btn-primary">Subscribe Now</button>
-									</div>
-								</div>
-							</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<footer id="colorlib-footer">
-			<div class="container">
-				<div class="row row-pb-md">
-					<div class="col-md-3 colorlib-widget">
-						<h4>About Robust Gym</h4>
-						<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-						<p>
-							<ul class="colorlib-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							</ul>
-						</p>
-					</div>
-					<div class="col-md-3 colorlib-widget">
-						<h4>Quick Links</h4>
-						<p>
-							<ul class="colorlib-footer-links">
-								<li><a href="#"><i class="icon-check"></i> About Us</a></li>
-								<li><a href="#"><i class="icon-check"></i> Testimonials</a></li>
-								<li><a href="#"><i class="icon-check"></i> Classes</a></li>
-								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
-								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
-								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
-							</ul>
-						</p>
-					</div>
-
-					<div class="col-md-3 colorlib-widget">
-						<h4>Recent Post</h4>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Tips for sexy body</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Tips for sexy body</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Tips for sexy body</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-3 colorlib-widget">
-						<h4>Contact Info</h4>
-						<ul class="colorlib-footer-links">
-							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
-							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
-							<li><a href="http://luxehotel.com"><i class="icon-location4"></i> yourwebsite.com</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
 			<div class="copy">
 				<div class="container">
 					<div class="row">
@@ -529,7 +407,7 @@
 								<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small><br> 
-								<small class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>, <a href="http://pexels.com/" target="_blank">Pexels</a></small>
+								<small class="block">Website written and designed by: Lawrence Lai and Elizabeth Koze</small>
 							</p>
 						</div>
 					</div>
