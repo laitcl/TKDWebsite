@@ -1,219 +1,476 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-	<title>MIT Sport Taekwondo Club</title>
-	<link rel="stylesheet" type="text/css" href="styles/testmain.css">
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MIT Sport Taekwondo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="MIT Sport Taekwondo Website" />
+	<meta name="keywords" content="MIT, Taekwondo, Martial Arts" />
+	<meta name="author" content="Lawrence Lai" />
 
-</head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
 
-	try {
-		var pageTracker = _gat._getTracker("UA-11713872-1");
-		pageTracker._trackPageview();
-	} catch(err) {
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script src="js/jquery.min.js"></script>
+	</head>
+	
+	
+	<body>
 		
-    }
-</script>
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="row">
+					<div class="col-md-2">
+						<div id="colorlib-logo"><a href="index.html">MIT Sport Taekwondo</a></div>
+					</div>
+					<div class="col-md-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li class="has-dropdown">
+								<a href="about.html">About</a>
+								<ul class="dropdown">
+									<li><a href="Practices.html">Club Practices</a></li>
+									<li><a href="Tournaments.html">Tournaments</a></li>
+									<li><a href="Tests.html">Belt Tests</a></li>
+									<li><a href="Social.html">Social Events</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+								</ul>
+							</li>
+							<li><a href="calendar.html">Calendar</a></li>
+							<li class="has-dropdown">	
+								<a href="People.html">People</a>
+								<ul class="dropdown">
+									<li><a href="Officers.html">Officers</a></li>
+									<li><a href="Instructors.html">Instructors</a></li>
+								</ul>
+							<li><a href="https://www.facebook.com/MITSportTaekwondo/" target="_blank">Facebook</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(images/index/bg_1.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>This is a team of dedicated martial artists</h1>
+				   					<p><a href="practices.html" class="btn btn-primary btn-lg btn-learn" target="_blank">Join Practices</a></p>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+		
+		<div id="colorlib-intro">
+			<div class="container" style="margin-bottom: 25px">
+				<div class="row">
+					<div class="col-md-12 intro-wrap animate-box">
+						<div class="intro-flex">
+							<div class="one-third intro-img" style="background-image: url(images/index/intro_1.jpg)">
+								<div class="desc">
+									<h3>Club Practices</h3>
+									<p>Join one of our rigorous club pratices to learn the martial art of Taekwondo</p>
+								</div>
+							</div>
+							<div class="one-third intro-img" style="background-image: url(images/index/intro_2.jpg)" >
+								<div class="desc">
+									<h3>Tournaments</h3>
+									<p>Test your mettle in the six annual tournaments throughout the nation</p>
+								</div>
+							</div>
+							<div class="one-third intro-img" style="background-image: url(images/index/intro_3.jpg)">
+								<div class="desc">
+									<h3>Social Events</h3>
+									<p>Find your friends at MIT through Sport Taekwondo</p>
+								</div>
+							</div>
+						</div>
+		         </div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-schedule" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Our Practice Schedule</h2>
+						<p>Our practices take place at</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="schedule text-center animate-box">
+						<div class="col-md-12">
+							<ul class="week">
+								<button onclick="openSchedule('Beginner')">Beginner</button>
+								<button onclick="openSchedule('Experienced')">Experienced</button>
+							</ul>
+						</div>
+						<div id="Beginner" class="schedule-flex scheduletype">
+							<div class="entry-third">
+								<p class="icon"><span><i class="flaticon-martial-arts"></i></span></p>
+								<p class="time"><span>Monday, Wednesday <br> 7:30 - 9:30pm</span></p>
+								<h3>Club Practices</h3>
+								<p class="trainer"><span>DuPont Basketball Courts</span></p>
+							</div>
+							<div class="entry-third">
+								<p class="icon"><span><i class="flaticon-gloves"></i></span></p>
+								<p class="time"><span>Friday <br> 7:30 - 9:30pm </span></p>
+								<h3>Sparring Practice</h3>
+								<p class="trainer"><span>DuPont Basketball Courts</span></p>
+							</div>
+							<div class="entry-third">
+								<p class="icon"><span><i class="flaticon-exercise-2"></i></span></p>
+								<p class="time"><span>Sunday <br> 1 - 3pm</span></p>
+								<h3>Captain's Practice</h3>
+								<p class="trainer"><span>T-Club Lounge</span></p>
+							</div>
+						</div>
+
+						<div id="Experienced" class="schedule-flex scheduletype" style="display:none">
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-martial-arts"></i></span></p>
+								<p class="time"><span>Monday, Wednesday <br> 7:30 - 9:30pm</span></p>
+								<h3>Club Practices</h3>
+								<p class="trainer"><span>DuPont Basketball Courts</span></p>
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-gloves"></i></span></p>
+								<p class="time"><span>Tuesday, Thursday <br> 7:30 - 9:30pm</span></p>
+								<h3>Advanced Sparring Practice <br> - by Invitation Only</h3>
+								<p class="trainer"><span>CW Taekwondo</span></p>
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-gloves"></i></span></p>
+								<p class="time"><span>Friday <br> 7:30 - 9:30pm </span></p>
+								<h3>Sparring Practice</h3>
+								<p class="trainer"><span>DuPont Basketball Courts</span></p>
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-exercise-2"></i></span></p>
+								<p class="time"><span>Sunday <br> 1 - 3pm</span></p>
+								<h3>Captain's Practice</h3>
+								<p class="trainer"><span>T-Club Lounge</span></p>
+							</div>
+						</div>
+						</div>
+
+						<script>
+						function openSchedule(scheduleName) {
+						  var i;
+						  var x = document.getElementsByClassName("scheduletype");
+						  for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						  }
+						  document.getElementById(scheduleName).style.display = "flex";  
+						}
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-<!----------------SLIDESHOW CODE ------------------->
-<script type="text/javascript">
+		<div id="colorlib-testimony" class="testimony-img" style="background-image: url(images/index/bg_2.png);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>What People Says</h2>
+						<h3>Success Stories</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="row animate-box">
+							<div class="owl-carousel1">
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span>Nina Anwar - Course 10 Class of 2018</span>
+												<p>I have developed to become a much more self confident person by joining MIT Sport Taekwondo.</p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url(images/index/testimonial_1.jpg);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span>Ajay Saini - Course 6 Class of 2018</span>
+												<p>Discover strength and form a community that will last you a lifetime.</p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url(images/index/testimonial_2.jpg);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span>Renee Zhao - Course 5 Class of 2018</span>
+												<p>MIT Sport Taekwondo will instantly give you a new set of friends, and over time a new body, resilience, and drive.</p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url(images/index/testimonial_3.jpg);"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	var image1=new Image()
-    image1.src="images/slideshow/1.jpg"
-    var image2=new Image()
-    image2.src="images/slideshow/2.jpg"
-    var image3=new Image()
-    image3.src="images/slideshow/3.jpg"
-    var image4=new Image()
-    image4.src="images/slideshow/4.jpg"
-    var image5=new Image()
-    image5.src="images/slideshow/5.jpg"
-    
-    var image6=new Image()
-    image6.src="images/slideshow/6.jpg"
-    var image7=new Image()
-    image7.src="images/slideshow/7.jpg"
-    var image8=new Image()
-    image8.src="images/slideshow/8.jpg"
-    var image9=new Image()
-    image9.src="images/slideshow/9.jpg"
-    var image10=new Image()
-    image10.src="images/slideshow/10.jpg"
-    
-    var image11=new Image()
-    image11.src="images/slideshow/11.jpg"
-    var image12=new Image()
-    image12.src="images/slideshow/12.jpg"
-    var image13=new Image()
-    image13.src="images/slideshow/13.jpg"
-    var image14=new Image()
-    image14.src="images/slideshow/14.jpg"
-    var image15=new Image()
-    image15.src="images/slideshow/15.jpg"
-    
-    var image16=new Image()
-    image16.src="images/slideshow/16.jpg"
-    var image17=new Image()
-    image17.src="images/slideshow/17.jpg"
-    
-</script>
+		<div class="colorlib-trainers">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Our Experienced Trainers</h2>
+						<p>MIT Sport Taekwondo partners with affiliates and alums that are world class Taekwondo practitioners.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/dan_chuang.jpg)"></div>
+							<div class="desc">
+								<h3>Dan Chuang</h3>
+								<span>Head Coach</span>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/michelle_chen.jpg)"></div>
+							<div class="desc">
+								<h3>Michelle Chen</h3>
+								<span>National Poomsae Gold Medalist</span>
+							</div>
+						</div>
+					</div>
 
-<body>
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/isaac_fenta.jpg)"></div>
+							<div class="desc">
+								<h3>Isaac Fenta</h3>
+								<span>Sparring Instructor</span>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/nick_hensel.png)"></div>
+							<div class="desc">
+								<h3>Nicholas Hensel</h3>
+								<span>Sparring Instructor</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/renee_zhao.jpg)"></div>
+							<div class="desc">
+								<h3>Renee Zhao</h3>
+								<span>National Poomsae Gold Medalist</span>
+							</div>
+						</div>
+					</div>
 
-<center>
-<div id="header">
-	<img src="images/header2.png">
-</div>
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/sam_kim.jpg)"></div>
+							<div class="desc">
+								<h3>Samuel Kim</h3>
+								<span>Leader of MIT Sport Taekwondo Demo Team</span>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/ashley_wang.jpg)"></div>
+							<div class="desc">
+								<h3>Ashley Wang</h3>
+								<span>Insert Title</span>
+							</div>
+						</div>
+					</div>
 
-<div id="main">
-	<div id="menuColumn">
-		<p><img src="images/coolimage.jpg" border=0></p>
-  <hr width = "75%"></hr>
-		<p class="mainMenu">Home</p>
-		<p class="mainMenu"><a href="pages/about.html">About Our Club</a></p>
-		<p class="mainMenu"><a href="pages/people.html">People</a></p>
-		<p class="mainMenu"><a href="https://www.facebook.com/MITSportTaekwondo/">Facebook Page</a></p>
-		<p class="mainMenu"><a href="pages/links.html">Links</a></p>
-		<p class="mainMenu"><a href="https://web.mit.edu/taekwondo/members/index.html">Members Area</a></p>
-		<p class="mainMenu"><a href="pages/tournament.html">Tournaments</a></p>
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="trainers-entry">
+							<div class="trainer-img" style="background-image: url(images/instructors/tahin_syed.jpg)"></div>
+							<div class="desc">
+								<h3>Tahin Syed</h3>
+								<span>Insert Title</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="colorlib-classes colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Our Practices</h2>
+						<p>MIT Sport Taekwondo practices are generally focused on one of the following categories</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 animate-box">
+						<div class="classes">
+							<div class="classes-img" style="background-image: url(images/index/Classes/Sparring.jpg);">
+							</div>
+							<div class="desc">
+								<h3><a href="practices.html">Olympic Style Sparring</a></h3>
+								<p>Express your technique through olympic style taekwondo sparring</p>
+								<p><a href="practices.html" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="classes">
+							<div class="classes-img" style="background-image: url(images/index/Classes/Poomsae.jpg);">
+							</div>
+							<div class="desc">
+								<h3><a href="practices.html">World Taekwondo Poomsae (Forms) </a></h3>
+								<p>Perfect your precision through World Taekwondo Forms</p>
+								<p><a href="practices.html" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="classes">
+							<div class="classes-img" style="background-image: url(images/index/Classes/Conditioning.jpg);">
+							</div>
+							<div class="desc">
+								<h3><a href="practices.html">Conditioning and Strength</a></h3>
+								<p>Build a stronger body in our conditioning sessions</p>
+								<p><a href="practices.html" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div id="colorlib-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 animate-box">
+						<h2>Contact Information</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="contact-info-wrap-flex">
+									<div class="con-info">
+										<p><b>E-mail</b><br><span><i class="icon-paperplane"></i></span> <a href="mailto:sport-tkd-info@mit.edu">sport-tkd-info@mit.edu</a></p>
+									</div>
+									<div class="con-info">
+										<p><b>Facebook</b><br><span><i class="icon-globe"></i></span> <a href="https://www.facebook.com/MITSportTaekwondo/">https://www.facebook.com/MITSportTaekwondo/</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="colorlib-footer">
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small><br> 
+								<small class="block">Website written and designed by: Lawrence Lai and Elizabeth Koze</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 	</div>
 	
-	<div id="content">
-    		
-		<p> <b><h4>Welcome to the MIT Sport Taekwondo Club!</h4></b> We are dedicated to providing a place for taekwondoists <i>of all abilities</i> to train together, while becoming part of an exciting and close-knit community. The club has won multiple ECTC league and national championship titles in past years. Come join us!</p>
-  
-<center><img src="images/slideshow/1.jpg" name = "slide"></center>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
 
-<p>
-  <script>
-  //variable that will increment through the images
-  var step=1
-  function slideit(){
-  //if browser does not support the image object, exit.
-  if (!document.images)
-  return
-  document.images.slide.src=eval("image"+step+".src")
-  if (step<17)
-  step++
-  else
-  step=1
-  //call function "slideit()" every 2.5 seconds
-  setTimeout("slideit()",2500)
-  }
-  slideit()
-</script>
-  
-<!--
-<img src="images/news.jpg" border=0>  </p>
-  
-<h2 class="gray"><b><u>DAYS UNTIL UVM TOURNAMENT:</u></b><br>   
-<script language="JavaScript">
-TargetDate = "04/09/2016 08:00 AM";
-ForeColor = "#003399";
-CountActive = true;
-CountStepper = -1;
-LeadingZero = true;
-DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds!";
-FinishMessage = "0 DAYS! GO TECH GO TECH!";
-</script>
-<script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
-</h2>
--->
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=102078096497814';
-		  fjs.parentNode.insertBefore(js, fjs);
-		  }(document, 'script', 'facebook-jssdk'));</script>
-
-<div style="margin: 0 100px" class="fb-page" data-href="https://www.facebook.com/MITSportTaekwondo/" data-tabs="timeline" data-width="500" data-height="1000" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MITSportTaekwondo/" class="fb-xfbml-parse-ignore"></blockquote></div>
-
-<!--
-<p><b>Kickathon &amp; Friends of MIT</b> <br>
-  <br>
-Thanks to <a href="pages/friends.html">everyone</a> who made this year's Kickathon a success - we raised considerably more than last year! We had a great turnout for the event, even though we were unable to hold the event outside due to rain. We broke around 20 boards and did 1000 kicks together. Check out <a href="https://www.facebook.com/media/set/?set=a.1085189314880095.1073741898.201253339940368&type=1&l=6cf5b8a1db">photos on Facebook</a>!</p>
-<p><b>Summer 2016 Practice</b> <br>
-  <br>
-  Spring practices start Monday, June 13th.<br>
-  Beginners/all levels are always welcome! Check out our practice schedule <a href="pages/classes.html">here</a>!</p>
-<p><b>Spring 2016 Practice</b>
-  <br><br>
-  Spring practices start Monday, February 1st.<br>Beginners/all levels are always welcome! Check out our practice schedule <a href="pages/classes.html">here</a>!</p>
-<p><b>Fall 2015 Practice</b> <br>
-  <br>
-  Fall practices start Wednesday, Sept 9th. PE classes start Monday, Sept. 14. <br>
-  Beginners/all levels are always welcome!! <br>
-  <br>
-  <b>Summer 2015 Practice</b>
-  <br><br>Summer practices start Monday, June 8th.
-  <br><br>
-  Practices will be held Monday, Wednesday and Friday in the DuPont Basketball courts from 7:00 - 9:00 P.M. Beginners/all levels are always welcome!</b>
-  
-  <br><br>
-  <b>NCTA Nationals 2015 Results</b>
-  <br><br>Huge congratulations to the team!! The team placed <b><i>second in the Championship division</i></b> and tied for <b><i>third in the Overall division</i></b> at the 40th Annual National Collegiate Championship this weekend!! Go Tech!!
-  <br>
-  
-  <br><br>
-  <b>Spring Practices</b>
-  
-  <br><br>Club practices are held on Monday, Wednesday and Fridays in the DuPont Basketball courts from 7:30 - 9:30 P.M. Beginners are always welcome!
-  
-  <br><br>
-  <b>IAP 2015 PE/Practice</b>
-  <br><br>IAP PE classes start on January 5 (Monday) at 7:30pm.
-  <br><br>
-  Practices will be held Monday, Wednesday and Friday in the DuPont Basketball courts. Beginners and Taekwondoists of all levels are always welcome!
-  <br>
-  <img src = "images/iap.jpg" width = "550px">
-  </b>
-  
-  <br><br>
-  <b>Fall 2014 Practice</b>
-  <br><br>Fall practices start September 3rd for returning members, and September 8th for new members.
-  <br><br>
-  Practices will be held Monday, Wednesday and Friday in the DuPont Basketball courts from 7:30 - 9:30 P.M. Beginners are always welcome!</b>
-  
-  
-  <br><br>
-  <b>World Taekwondo Poomsae Championships</b>
-  
-  <br><br>Good luck to club president Michelle Chen and Master Dan Chuang, who are heading to Bali, Indonesia for the World Taekwondo Poomsase Championships! Michelle will represent the US national team with her teammates Carissa Fu and Miyako Yerick in the female -29 team poomsae division. Master Chuang will be traveling as a US National Poomsae Coach.
-  <br>
-  <b> *UPDATE*</b> Congratulations to Michelle, Carissa, Miyako, and Master Chuang! The team reached the finals of the division, advancing by placing 8th of 18 in the semifinal round with Taeguek 8 and Keumgang. They finished 8th overall after the finals (Pyongwon and Keumgang), a fantastic result. 
-  
-  <br><br>
-</p>
-
-<br><br><b>Activities Midway</b>
-
-<br><br>The fall Activities Midway will be held on Friday, August 30th from 2:30-4:30 pm in the Johnson Athletic Center. Drop by our booth to say hi! 
-        
-<br><br><b>Athletics Gateway</b>
-
-<br><br>The Athletics Gateway will be held on Tuesday, August 27th from 2-4 pm in Rockwell Cage (Z-Center). Come by to visit our booth and watch some of our members in the demo!          
-
--->		
-		
-	</div>
-</div>
-</center>
-<p align="right" class="lastUpdate">
-	<script language="Javascript">
-		var d = new Date(document.lastModified);
-		document.write("Date of last update: " + d.toLocaleString() + "   ");
-	</script>
-</p>
-</body>
+	</body>
 </html>
+
