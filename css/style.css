@@ -110,7 +110,12 @@ h1, h2, h3, h4, h5, h6, figure {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    font-weight: 900; }
+    font-weight: 900;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;	}
     .colorlib-nav #colorlib-logo a {
       position: relative;
       color: #fff; }
