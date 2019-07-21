@@ -732,6 +732,19 @@ h1, h2, h3, h4, h5, h6, figure {
         font-size: 18px;
         margin-bottom: 10px; }
 
+/* centered columns styles */
+.row-centered {
+text-align:center;
+}
+.col-centered {
+display:inline-block;
+float:none;
+/* reset the text-align */
+text-align:left;
+/* inline-block space fix */
+margin-right:-4px;
+}
+
 .trainers-entry .trainer-img {
   display: block;
   height: 300px; }
@@ -1149,7 +1162,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .heading-2 {
   display: block;
-  margin-bottom: 3em; }
+  margin-top: 3em; }
   .heading-2 h2 {
     font-weight: 900;
     text-transform: uppercase; }
