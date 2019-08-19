@@ -1,0 +1,3 @@
+AuthType SSLCert
+Require afsgroup system:sport-tkd system:sport-tkd-officers
+ErrorDocument 401 /__scripts/needcerts
