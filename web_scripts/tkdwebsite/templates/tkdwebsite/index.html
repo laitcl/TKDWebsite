@@ -1,0 +1,198 @@
+{% extends "tkdwebsite/base.html" %}
+{% load static %}
+{% block content %}
+		
+		<div id="colorlib-intro">
+			<div class="container" style="margin-bottom: 25px">
+				<div class="row">
+					<div class="col-md-12 intro-wrap animate-box">
+						<div class="intro-flex">
+							<div class="one-third intro-img" style="background-image: url({% static 'media/home/intro_1.jpg' %})">
+								<div class="desc">
+									<h3>Club Practices</h3>
+									<p>Join one of our rigorous club pratices to learn the martial art of Taekwondo</p>
+								</div>
+							</div>
+							<div class="one-third intro-img" style="background-image: url({% static 'media/home/intro_2.jpg' %})" >
+								<div class="desc">
+									<h3>Tournaments</h3>
+									<p>Test your mettle in the six annual tournaments throughout the nation</p>
+								</div>
+							</div>
+							<div class="one-third intro-img" style="background-image: url({% static 'media/home/intro_3.jpg' %})">
+								<div class="desc">
+									<h3>Social Events</h3>
+									<p>Find your friends at MIT through Sport Taekwondo</p>
+								</div>
+							</div>
+						</div>
+				 </div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-schedule" class="colorlib-light-grey" style="padding: 3em">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box" style="margin-bottom:0em">
+						<h2>Our Practice Schedule</h2>
+						<p>Our practices take place at</p>
+					</div>
+				
+					<div class="schedule text-center animate-box">
+						<div class="schedule-flex scheduletype">
+						{% for practice in practiceslist %}
+							{% if forloop.counter0|divisibleby:4%}
+						</div>
+					</div>
+					<div class="schedule text-center animate-box">
+						<div class="schedule-flex scheduletype">
+							{% endif %}
+							<div class="entry-forth">
+								<p class="icon"><span><i class="{{practice.icon}}"></i></span></p>
+								<p class="time"><span>{{practice.days}} <br> {{practice.time}}</span></p>
+								<h3>{{practice.name}}</h3>
+								<p class="trainer"><span>{{practice.location}}</span></p>
+							</div>
+						{%endfor%}
+						</div>
+					</div>
+					</div>
+			</div>
+		</div>
+
+
+		<div id="colorlib-testimony" class="testimony-img" style="background-image: url({% static 'media/bg_2.jpg' %});" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>What People Say</h2>
+						<h3>Success Stories</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="row animate-box">
+							<div class="owl-carousel1">
+								{% for person in alumni %}
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span>{{person.name}} - Course {{person.course}} Class of {{person.classyear}}</span>
+												<p>{{person.text|safe}}</p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url({{person.image.url}});" id="{{person.name}}"></div>
+										</div>
+									</div>
+								</div>
+								{%endfor%}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="colorlib-trainers">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Our Experienced Trainers</h2>
+						<p>MIT Sport Taekwondo partners with affiliates and alums that are world class Taekwondo practitioners.</p>
+					</div>
+				</div>
+				<div class="row row-centered">
+					{% for instructor in instructors %}
+						{% if forloop.counter0|divisibleby:4%}
+							</div>
+							<div class="row row-centered">
+						{% endif %}
+						<div class="col-md-3 col-sm-3 animate-box col-centered">
+							<div class="trainers-entry">
+								<div class="trainer-img" style="background-image: url({{instructor.image.url}})"></div>
+								<a href="{% url 'instructors' %}">
+								<div class="desc">
+									<h3>{{instructor.name}}</h3>
+									<span>{{instructor.rank}}</span>
+								</div>
+								</a>
+							</div>
+						</div>
+					{%endfor%}
+				</div>
+
+
+				</div>
+			</div>
+		</div>
+		<div class="colorlib-classes colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Our Practices</h2>
+						<p>MIT Sport Taekwondo practices are generally focused on one of the following categories</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 animate-box">
+						<div class="classes">
+							<div class="classes-img" style="background-image: url({% static 'media/home/Sparring.jpg' %});">
+							</div>
+							<div class="desc">
+								<h3><a href="{% url 'practices' %}">Olympic Style Sparring</a></h3>
+								<p>Express your technique through olympic style taekwondo sparring</p>
+								<p><a href="{% url 'practices' %}" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="classes">
+							<div class="classes-img" style="background-image: url({% static 'media/home/Poomsae.jpg' %});">
+							</div>
+							<div class="desc">
+								<h3><a href="{% url 'practices' %}">World Taekwondo Sport Poomsae (Forms) </a></h3>
+								<p>Perfect your precision through World Taekwondo Forms</p>
+								<p><a href="{% url 'practices' %}" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="classes">
+							<div class="classes-img" style="background-image: url({% static 'media/home/Conditioning.jpg' %});">
+							</div>
+							<div class="desc">
+								<h3><a href="{% url 'practices' %}">Conditioning and Strength</a></h3>
+								<p>Build a stronger body in our conditioning sessions</p>
+								<p><a href="{% url 'practices' %}" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div id="colorlib-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 animate-box">
+						<h2>Contact Information</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="contact-info-wrap-flex">
+									<div class="con-info">
+										<p><b>E-mail</b><br><span><i class="icon-paperplane"></i></span> <a href="mailto:sport-tkd-info@mit.edu">sport-tkd-info@mit.edu</a></p>
+									</div>
+									<div class="con-info">
+										<p><b>Facebook</b><br><span><i class="icon-globe"></i></span> <a href="https://www.facebook.com/MITSportTaekwondo/">https://www.facebook.com/MITSportTaekwondo/</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{% endblock content %}}

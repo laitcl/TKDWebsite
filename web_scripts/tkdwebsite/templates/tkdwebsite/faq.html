@@ -1,0 +1,19 @@
+{% extends "tkdwebsite/base.html" %}
+{% block content %}
+		<div class="colorlib-classes">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 animate-box">
+						<div class="classes">
+							<div class="desc">
+								<h1><a href="#">Frequently Asked Questions</a></h1>
+									{% for question in questions %}
+										{{question.text|safe}}
+									{%endfor%}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+{% endblock content %}}

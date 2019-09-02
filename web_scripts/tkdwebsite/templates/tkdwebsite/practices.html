@@ -1,0 +1,55 @@
+{% extends "tkdwebsite/base.html" %}
+{% block content %}
+	<div id="colorlib-schedule" class="colorlib-light-grey" style="padding: 3em">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box" style="margin-bottom: 0px">
+					<h2>Our Practice Schedule</h2>
+					<p>Our practices take place at</p>
+				</div>
+			</div>
+			
+			<div class="row row-centered">
+				<div class="schedule text-center animate-box">
+					<div class="schedule-flex scheduletype">
+					{% for practice in practiceslist %}
+						{% if forloop.counter0|divisibleby:4%}
+					</div>
+				</div>
+				<div class="schedule text-center animate-box">
+					<div class="schedule-flex scheduletype">
+						{% endif %}
+						<div class="entry-forth">
+							<p class="icon"><span><i class="{{practice.icon}}"></i></span></p>
+							<p class="time"><span>{{practice.days}} <br> {{practice.time}}</span></p>
+							<h3>{{practice.name}}</h3>
+							<p class="trainer"><span>{{practice.location}}</span></p>
+						</div>
+					{%endfor%}
+					</div>
+				</div>
+				<br><p> In addition, open workouts take place immediately after club practices and sparring practices to facilitate additional training. Open workout is held in the Dupont Basketball Court and is led by the club assistant instructors. They are open to all belt levels, and students can get one-on-one help on forms and curriculum or just kick. </p>
+			</div>
+		</div>
+	</div>
+			
+	<div class="colorlib-classes colorlib-light-grey" style="padding: 2em">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box" style="margin-bottom: 10px">
+					<h2>Practice Description</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="classes" >
+					<div class="desc" style="padding: 0em">
+					{% for practice in practiceslist %}
+						<h3>{{practice.name}}</h3>
+						{{practice.description|safe}}
+					{%endfor%}
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+{% endblock content %}}

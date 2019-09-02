@@ -1,0 +1,20 @@
+{% extends "tkdwebsite/base.html" %}
+{% block content %}
+	<div id="colorlib-about">
+		<div class="container">
+			<div class="row">
+			</div>
+			<div class="row">
+				<div class="desc">
+					<div class="row" style="margin-bottom: 25px" id="developer-blog">
+						<h2 style="text-align: center">Developer Blog</h2>
+						<p> All articles by laitcl</p>
+						<br>1. <a href="{% url 'blog1' %}"> Before the black belt test </a>
+						<br>2. <a href="{% url 'blog2' %}"> The inner conversation </a>
+						<br>3. <a href="{% url 'blog3' %}"> The creation of the new website </a></p></td>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}}

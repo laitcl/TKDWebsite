@@ -1,0 +1,54 @@
+{% extends "tkdwebsite/base.html" %}
+{% block content %}
+	<div id="colorlib-about" style="padding: 3em">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<h2>Our Friends</h2>
+					<p>The operation of this team is enabled through friends of MIT Sport Taekwondo and their generous donations and services. This page acknowledges the support that these individuals and organizations that have donated or have otherwise contributed to us. </p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box" style="margin-bottom:10px">
+					<h2>Major Contributors</h2>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="desc">
+					{% for friend in majorfriends %}
+					<div class="row" style="margin-bottom: 25px" id="{{friend.name}}">
+					<h2 style="text-align: center">{{friend.name}}</h2>
+					{% if forloop.counter|divisibleby:2%}
+						<img src="{{friend.image.url}}" alt="" style="width:200px;height:auto;" align="left" hspace="20">
+					{%else%}
+						<img src="{{friend.image.url}}" alt="" style="width:200px;height:auto;" align="right" hspace="20">
+					{%endif%}
+					<p><b>{{friend.friendtype}}</b></p>
+					<p>Contribution of: {{friend.contribution}} </p>
+					{{friend.text|safe}}
+					</div>
+					{%endfor%}
+				
+				</div>
+			</div>
+			
+			
+			<div class="row" style="margin-top:5em">
+				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box" style="margin-bottom:10px">
+					<h2>Minor Contributors</h2>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="desc">
+					{% for friend in minorfriends %}
+					<p> {{friend.name}} contributed {{friend.contribution}} <p> 
+					{%endfor%}
+				</div>
+			</div>
+			
+		</div>
+	</div>
+{% endblock content %}}
