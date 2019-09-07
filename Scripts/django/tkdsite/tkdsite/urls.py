@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = patterns('', 
-    url('admin/', admin.site.urls),
-    url('', include('tkdwebsite.urls')),
+    url(r'^admin/', admin.site.urls),
+    url(r'^', include('tkdwebsite.urls')),
     url(r'^tinymce/', include('tinymce.urls')),
 )
