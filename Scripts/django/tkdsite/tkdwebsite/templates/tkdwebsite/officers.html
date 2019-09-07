@@ -1,0 +1,29 @@
+{% extends "tkdwebsite/base.html" %}
+{% block content %}
+	<div id="colorlib-about" style="padding: 3em">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<h2>Our Officers</h2>
+					<p>Our officers are MIT students who volunteered to ensure proper operation of the club. The officers are responsible for arranging practice schedules, interfacing with instructors, recruiting, arrangements with hosting and travelling to tournaments, as well as the website that you're currently viewing. </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="desc">
+					{% for officer in positions %}
+						<div class="row" style="margin-bottom: 25px" id="{{officer.name}}">
+						<h2 style="text-align: center">{{officer.name}} - {{officer.position}}</h2>
+					{% if forloop.counter|divisibleby:2%}
+						<img src="{{officer.image.url}}" alt="" style="width:200px;height:auto;" align="left" hspace="20">
+					{%else%}
+						<img src="{{officer.image.url}}" alt="" style="width:200px;height:auto;" align="right" hspace="20">
+					{%endif%}
+						{{officer.text|safe}}
+					</div>
+					{%endfor%}
+
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}}

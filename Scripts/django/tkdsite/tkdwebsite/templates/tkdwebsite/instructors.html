@@ -1,0 +1,30 @@
+{% extends "tkdwebsite/base.html" %}
+{% block content %}
+	<div id="colorlib-about" style="padding: 3em">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<h2>Our Instructors</h2>
+					<p>Our instructors are MIT alum or affiliates that are skilled black belts certified by the World Taekwondo Headquarters (Kukkiwon) </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="desc">
+				
+					{% for instructor in names %}
+					<div class="row" style="margin-bottom: 25px" id="{{instructor.name}}">
+					<h2 style="text-align: center">{{instructor.name}}</h2>
+					{% if forloop.counter|divisibleby:2%}
+						<img src="{{instructor.image.url}}" alt="" style="width:200px;height:auto;" align="left" hspace="20">
+					{%else%}
+						<img src="{{instructor.image.url}}" alt="" style="width:200px;height:auto;" align="right" hspace="20">
+					{%endif%}
+					{{instructor.text|safe}}
+					</div>
+					{%endfor%}
+				
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}}

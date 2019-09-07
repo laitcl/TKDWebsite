@@ -1,0 +1,83 @@
+{% extends "tkdwebsite/base.html" %}
+{% block content %}
+	<div id="colorlib-about" style="padding: 3em">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box" style="margin-bottom: 15px">
+					<h2>Tournaments</h2>
+					<p>Whether you're an experienced veteran, or just experiencing taekwondo for the first time, you should consider signing up for the next ECTC tournament! There's nothing more exciting than representing your team by performing that form you've been practicing for months, nothing more epic than channeling all of that strength you've acquired from practice into sparring, and nothing more exotic than being there for your teammates, enthusiastically cheering them on throughout the day.</p>
+					<p>As of 2019, MIT Sport Taekwondo visits 6 tournaments that take place throughout the academic year in various locations. Many of them belong to the <a href="http://ectc-online.org">East Coast Taekwondo Collegiate (ECTC)</a> League, with one tournament from the <a href="http://ncta-usa.com"> National Collegiate Taekwondo Association (NCTA)</a>.</p>
+				</div>
+			</div>
+			
+			<div class="row" style="margin-bottom: 50px">
+				<h2 style="text-align: center"> Fall Semester </h2>
+				<div class="schedule text-center animate-box">
+					<div class="schedule-flex scheduletype">
+					{% for tournament in falltournaments %}
+						{% if forloop.counter0|divisibleby:4%}
+					</div>
+				</div>
+				<div class="schedule text-center animate-box">
+					<div class="schedule-flex scheduletype">
+						{% endif %}
+						<div class="entry-forth">
+							<p class="icon"><span><i class="{{tournament.icon}}"></i></span></p>
+							<p class="time"><span>{{tournament.timing}}</span></p>
+							<h3>{{tournament.name}}</h3>
+							<p class="trainer"><span>{{tournament.league}}</span></p>
+						</div>
+					{%endfor%}
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 50px">
+				<h2 style="text-align: center"> Spring Semester </h2>
+				<div class="schedule text-center animate-box">
+					<div class="schedule-flex scheduletype">
+					{% for tournament in springtournaments %}
+						{% if forloop.counter0|divisibleby:4%}
+					</div>
+				</div>
+				<div class="schedule text-center animate-box">
+					<div class="schedule-flex scheduletype">
+						{% endif %}
+						<div class="entry-forth">
+							<p class="icon"><span><i class="{{tournament.icon}}"></i></span></p>
+							<p class="time"><span>{{tournament.timing}}</span></p>
+							<h3>{{tournament.name}}</h3>
+							<p class="trainer"><span>{{tournament.league}}</span></p>
+						</div>
+					{%endfor%}
+					</div>
+				</div>
+			</div>
+			
+			{% if summertournaments %}
+			<div class="row" style="margin-bottom: 50px">
+				<h2 style="text-align: center"> Summer </h2>
+				<div class="schedule text-center animate-box">
+					<div class="schedule-flex scheduletype">
+					{% for tournament in summertournaments %}
+						{% if forloop.counter0|divisibleby:4%}
+					</div>
+				</div>
+				<div class="schedule text-center animate-box">
+					<div class="schedule-flex scheduletype">
+						{% endif %}
+						<div class="entry-forth">
+							<p class="icon"><span><i class="{{tournament.icon}}"></i></span></p>
+							<p class="time"><span>{{tournament.timing}}</span></p>
+							<h3>{{tournament.name}}</h3>
+							<p class="trainer"><span>{{tournament.league}}</span></p>
+						</div>
+					{%endfor%}
+					</div>
+				</div>
+			</div>
+			{% endif %}
+
+		</div>
+	</div>
+{% endblock content %}}

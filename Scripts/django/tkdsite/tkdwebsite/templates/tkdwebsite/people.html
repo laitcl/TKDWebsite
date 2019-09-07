@@ -1,0 +1,22 @@
+{% extends "tkdwebsite/base.html" %}
+{% block content %}
+	<div id="colorlib-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center animate-box">
+					<div class="about-wrap">
+						<div class="heading-2">
+							<h2>The People of MIT Sport Taekwondo</h2>
+						</div>
+						<p> MIT Sport Taekwondo is run by a crew of dedicated student <a href="Officers.html"> officers </a> appointed each year by the team, and <a href="Instructors.html"> instructors </a> who are in charge of teaching students curriculum and other techniques. </p>
+						<div class="heading-2">
+							<h2>More Information</h2>
+						</div>
+								<li><a href="Officers.html">Officers</a></li>
+								<li><a href="{% url 'instructors' %}">Instructors</a></li>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}}
