@@ -105,9 +105,11 @@
 				</div>
 				<div class="row row-centered">
 					{% for instructor in instructors %}
-						{% if forloop.counter0|divisibleby:4%}
-							</div>
-							<div class="row row-centered">
+						{% if forloop.counter0 != 0 %}
+							{% if forloop.counter0|divisibleby:4%}
+				</div>
+				<div class="row row-centered">
+							{% endif %}
 						{% endif %}
 						<div class="col-md-3 col-sm-3 animate-box col-centered">
 							<div class="trainers-entry">
@@ -123,8 +125,6 @@
 					{%endfor%}
 				</div>
 
-
-				</div>
 			</div>
 		</div>
 		<div class="colorlib-classes colorlib-light-grey">
